@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Løsning på intervju case" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <script type="module" defer src="./src/js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>Caseløsning</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Bolig priser i Norge:</h1>
+      <p class="bold">Velg sted for å se boligpriser i området</p>
+      <label for="city">Velg sted: </label>
+      <select name="city" id="citySelector">
+        <option value="Norge">Hele Norge</option>
+        <option value="Oslo">Oslo</option>
+        <option value="Bergen">Bergen</option>
+        <option value="Trondheim">Trondheim</option>
+        <option value="Stavanger m/omegn">Stavanger m/omegn</option>
+        <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+        <option value="Tromsø">Tromsø</option>
+      </select>
+      <div class="border"></div>
+      <div>
+        <h2>Sammenlign Steder</h2>
+        <p>Velg Steder byer for å sammenligne prisendringer</p>
+        <form id="form">
+          <label for="city1">By 1:</label>
+          <select id="city1" name="city1">
+            <option value="Norge">Hele Norge</option>
+            <option value="Oslo">Oslo</option>
+            <option value="Bergen">Bergen</option>
+            <option value="Trondheim">Trondheim</option>
+            <option value="Stavanger m/omegn">Stavanger m/omegn</option>
+            <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+            <option value="Tromsø">Tromsø</option>
+          </select>
+
+          <label for="city2">By 2:</label>
+          <select id="city2" name="city2">
+            <option value="Oslo">Oslo</option>
+            <option value="Bergen">Bergen</option>
+            <option value="Trondheim">Trondheim</option>
+            <option value="Stavanger m/omegn">Stavanger</option>
+            <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+            <option value="Tromsø">Tromsø</option>
+            <option value="Norge">Hele Norge</option>
+          </select>
+          <button class="btn" type="submit">Sammenlign</button>
+        </form>
+      </div>
+      <div class="border"></div>
+      <div class="list-container"></div>
+    </section>
+  </body>
+</html>
