@@ -5,9 +5,10 @@ export const apiCall = async (url) => {
       const data = await response.json();
       return data;
     } else {
-      return;
+      throw new Error("Error fetching data");
     }
   } catch (error) {
     console.error(error);
+    alert("Error fetching data");
   }
 };
