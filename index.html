@@ -26,32 +26,38 @@
       </select>
       <div class="border"></div>
       <div>
-        <h2>Sammenlign Steder</h2>
-        <p>Velg Steder byer for å sammenligne prisendringer</p>
-        <form id="form">
-          <label for="city1">By 1:</label>
-          <select id="city1" name="city1">
-            <option value="Norge">Hele Norge</option>
-            <option value="Oslo">Oslo</option>
-            <option value="Bergen">Bergen</option>
-            <option value="Trondheim">Trondheim</option>
-            <option value="Stavanger m/omegn">Stavanger m/omegn</option>
-            <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
-            <option value="Tromsø">Tromsø</option>
-          </select>
+        <button id="toggleForm" class="btn">Sammenlign steder</button>
+        <div id="formContainer" class="form-container">
+          <p>Velg to steder for å sammenligne prisendringer</p>
+          <form id="form">
+            <div>
+              <label for="city1">By 1:</label>
+              <select id="city1" name="city1">
+                <option value="Norge">Hele Norge</option>
+                <option value="Oslo">Oslo</option>
+                <option value="Bergen">Bergen</option>
+                <option value="Trondheim">Trondheim</option>
+                <option value="Stavanger m/omegn">Stavanger m/omegn</option>
+                <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+                <option value="Tromsø">Tromsø</option>
+              </select>
+            </div>
 
-          <label for="city2">By 2:</label>
-          <select id="city2" name="city2">
-            <option value="Oslo">Oslo</option>
-            <option value="Bergen">Bergen</option>
-            <option value="Trondheim">Trondheim</option>
-            <option value="Stavanger m/omegn">Stavanger</option>
-            <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
-            <option value="Tromsø">Tromsø</option>
-            <option value="Norge">Hele Norge</option>
-          </select>
-          <button class="btn" type="submit">Sammenlign</button>
-        </form>
+            <div>
+              <label for="city2">By 2:</label>
+              <select id="city2" name="city2">
+                <option value="Oslo">Oslo</option>
+                <option value="Bergen">Bergen</option>
+                <option value="Trondheim">Trondheim</option>
+                <option value="Stavanger m/omegn">Stavanger</option>
+                <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+                <option value="Tromsø">Tromsø</option>
+                <option value="Norge">Hele Norge</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Sammenlign</button>
+          </form>
+        </div>
       </div>
       <div class="border"></div>
       <div class="list-container"></div>

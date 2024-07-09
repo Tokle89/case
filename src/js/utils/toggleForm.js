@@ -1,16 +1,4 @@
-import { renderListings } from "./render/render.js";
-import { formHandler } from "./utils/formHandler.js";
-
-renderListings("Norge");
-
-document.getElementById("citySelector").addEventListener("change", (event) => {
-  const selectedCity = event.target.value;
-  renderListings(selectedCity);
-});
-
-document.getElementById("form").addEventListener("submit", formHandler);
-
-document.getElementById("toggleForm").addEventListener("click", () => {
+export const toggleForm = () => {
   const formContainer = document.getElementById("formContainer");
   const toggleBtn = document.getElementById("toggleForm");
 
@@ -25,4 +13,4 @@ document.getElementById("toggleForm").addEventListener("click", () => {
     toggleBtn.innerHTML = "Skjul skjema";
     toggleBtn.classList.add("active");
   }
-});
+};
